@@ -1,0 +1,21 @@
+{
+    "name": "pbritka/module-ga-measurement-protocol",
+    "description": "Magento 2 module for GA4 Measurement Protocol",
+    "type": "magento2-module",
+    "license": [
+      "OSL-3.0",
+      "AFL-3.0"  
+    ],
+    "require": {
+      "php": ">=7.3.0",
+      "br33f/php-ga4-mp": "^0.1",
+      "magento/framework": "*"
+    },
+    "autoload": {
+      "files": [ "registration.php" ],
+      "psr-4": {
+        "Pbritka\\GaMeasurementProtocol\\": ""
+      }
+    }
+  }
+  

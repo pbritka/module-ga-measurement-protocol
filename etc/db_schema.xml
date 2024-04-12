@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="sales_order">
+        <column xsi:type="tinyint" name="is_in_ga4" unsigned="true" nullable="true" comment="Is this order already in Google Analytics 4" />
+        <column xsi:type="tinyint" name="is_canceled_in_ga4" unsigned="true" nullable="true" comment="Is this order already canceled in Google Analytics 4" />
+        <column xsi:type="varchar" name="ga_session_id" nullable="true" comment="Google Analytics Session ID for Server Side Analytics" />
+        <column xsi:type="int" name="ga_session_number" unsigned="true" nullable="true" comment="Google Analytics Session Number for Server Side Analytics" />
+        <column xsi:type="varchar" name="ga_user_id" nullable="true" comment="Google Analytics User ID for Server Side Analytics" />
+    </table>
+</schema>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_order_payment_refund">        
+        <observer name="pbritka_gmp_order_ga4_refund" instance="Pbritka\GaMeasurementProtocol\Observer\Refund"/>
+    </event>
+    <event name="sales_order_place_before">        
+        <observer name="pbritka_gmp_save_ga_session_data" instance="Pbritka\GaMeasurementProtocol\Observer\SaveGaSessionData" />
+    </event>
+    <event name="sales_order_save_after">        
+        <observer name="pbritka_gmp_order_ga4_purchase" instance="Pbritka\GaMeasurementProtocol\Observer\Purchase"/>        
+    </event>
+</config>
